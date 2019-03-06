@@ -1,0 +1,16 @@
+<footer class="site-footer">
+    <div class="inner">
+        <div class="social-links">
+            {% if site.facebook_username %}
+            <a href="https://www.facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
+            {% endif %}
+            {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github" aria-hidden="true"></i><span class="screen-reader-text">GitHub</span></a>
+            {% endif %}
+        </div><!-- .social-links -->
+        <div class="copyright">
+            &copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">{{site.title}}</a>
+        </div><!-- .copyright -->
+        <a href="#page" id="top-link" class="top-link"><i class="fa fa-chevron-up" aria-hidden="true"></i><span class="screen-reader-text">Back to the top</span></a>
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
